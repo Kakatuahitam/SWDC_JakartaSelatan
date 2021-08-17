@@ -1,0 +1,95 @@
+/* SWDC_JakartaSelatan */
+/*
+  Tim 1 Jakarta Selatan
+  1. Yuda Kurnia Nurul Fikri
+  2. Kenzi Dewandaru
+  3. Zainul Muzakki
+*/
+
+/* 4. gallery.html Styles */
+.top_banner {
+  min-height: 250px;
+}
+
+.top_banner img {
+  height: 50%;
+}
+
+/* Source for below:
+  https://www.w3schools.com/howto/howto_js_collapsible.asp
+ */
+
+.collapsible {
+  background-color: #EA7811;
+  color: #F1EEF2;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  text-align: center;
+  outline: none;
+
+  margin: 8px 0px;
+}
+
+.active, .collapsible:hover {
+  background-color: #EA7811;
+}
+
+.collap_content {
+  padding: 0 18px;
+  background-color: #F1EEF2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.readability {
+  background-color: #F1EEF2;
+  max-width: 80%;
+}
+
+.report_grid {
+  display: grid;
+  grid-template-columns: 20% 50% 24px auto;
+  grid-gap: 4px;
+}
+
+.reported_preview {
+  border: 1px solid grey;
+  border-radius: 8px;
+  background-color: white;
+  height: 24em;
+  padding: 8px;
+
+  display: flex;
+  text-align: center;
+  font-size: 11px;
+
+  overflow: hidden;
+}
+
+.reported_preview figure{
+  margin: 4px;
+}
+
+.reported_preview figure img {
+  width: 128px;
+  height: 128px;
+}
+
+label[for="agreement"] {
+  font-size: 12px;
+}
+
+.warn {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+#homepage_grid_warn {
+  grid-column-start: 4;
+  grid-row: 1 / span 4;
+}

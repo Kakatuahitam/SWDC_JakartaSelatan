@@ -1,0 +1,91 @@
+/* SWDC_JakartaSelatan */
+/*
+  Tim 1 Jakarta Selatan
+  1. Yuda Kurnia Nurul Fikri
+  2. Kenzi Dewandaru
+  3. Zainul Muzakki
+*/
+
+/* 7. donation.html Styles */
+.readability {
+  background-color: #F1EEF2;
+  max-width: 80%;
+}
+
+.donation_image {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.title_and_share {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share {
+  background-color: #EA7811;
+  min-width: 120px;
+  max-width: 120px;
+
+  border-radius: 8px;
+
+  color: #F1EEF2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.donation_items {
+  margin: 16px 0px;
+}
+
+.donation_item {
+  margin-bottom: 16px;
+}
+
+.report_grid {
+  display: grid;
+  grid-template-columns: 20% 50% 24px auto;
+  grid-gap: 4px;
+}
+
+.reported_preview {
+  border: 1px solid grey;
+  border-radius: 8px;
+  background-color: white;
+  height: 24em;
+  padding: 8px;
+
+  display: flex;
+  text-align: center;
+  font-size: 11px;
+
+  overflow: hidden;
+}
+
+.reported_preview figure{
+  margin: 4px;
+}
+
+.reported_preview figure img {
+  width: 128px;
+  height: 128px;
+}
+
+label[for="agreement"] {
+  font-size: 12px;
+}
+
+.warn {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+#homepage_grid_warn {
+  grid-column-start: 4;
+  grid-row: 1 / span 4;
+}

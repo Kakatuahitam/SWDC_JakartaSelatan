@@ -1,0 +1,355 @@
+/* SWDC_JakartaSelatan */
+/*
+  Tim 1 Jakarta Selatan
+  1. Yuda Kurnia Nurul Fikri
+  2. Kenzi Dewandaru
+  3. Zainul Muzakki
+*/
+
+/* Primary Font, IBM Plex Sans */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/* Secondary Font, Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General Used Styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1EEF2;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+textarea {
+  resize: none;
+  border-radius: 8px;
+}
+
+input {
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+strong {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+input[type="submit"]{
+  margin: 4px 0px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  top: 50%;
+  border: none;
+
+  background-color: #EA7811;
+  color: #F1EEF2;
+}
+
+.main_jumbotron {
+  position: relative;
+}
+
+.jumbotron_caption {
+  position: absolute;
+  top: 67.5%;
+  left: 5%;
+  z-index: 10;
+
+  color: #F1EEF2;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.image_gradient{
+  position:relative;
+  display:inline-block;
+}
+
+.image_gradient::after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.0) 0%,rgba(0, 0, 0, 0.6) 60%);
+}
+
+.image_gradient img{
+  display:block;
+}
+
+.readability {
+  max-width: 60%;
+  margin: 8px auto;
+  padding: 8px 16px;
+  border-radius: 16px;
+
+  background-color: #C5B899;
+}
+
+.upload_button, input[type="submit"], input[type="checkbox"]{
+  cursor: pointer;
+}
+
+.warn_icon {
+  margin: 4px 8px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: none;
+  height: 100%;
+
+  background-color: #EA7811;
+  color: #F1EEF2;
+}
+
+.warn_icon img {
+  margin: 2px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top To Toe Styles */
+/* Header Styles */
+header {
+  margin: 8px;
+}
+
+.logo {
+  text-align: center;
+  margin: 4px;
+}
+
+hr {
+  border: 1px solid #EA7811;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li{
+  margin: 4px 8px;
+}
+
+nav li a{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.lang_separator {
+  min-width: 2px;
+  background-color: #EA7811;
+}
+
+/* Main Styles */
+main {
+  max-width: inherit;
+  margin: 8px;
+}
+
+/* Top Banner Styles */
+.top_banner {
+  background-color: #EA7811;
+  color: #F1EEF2;
+  padding: 24px 0px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_banner .bubbles_topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0
+}
+
+.top_banner .bubbles_downright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0
+}
+
+.top_banner .bubbles_downleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0
+}
+
+.top_banner .bubbles_topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0
+}
+
+.progress_bar {
+  background-color: #F44336;
+  border-radius: 16px;
+  min-height: 2em;
+}
+
+.progress {
+  background-color: #FC8514;
+  border-radius: 16px;
+  min-height: 2em;
+}
+
+.help_progress {
+  text-align: center;
+  color: white;
+  width: 20%;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #EA7811;
+  color: #F1EEF2;
+  padding: 24px 0px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+footer h3{
+  font-size: 18px;
+}
+
+footer hr {
+  border: 1px solid #F1EEF2;
+  margin-bottom: 8px;
+}
+
+footer img {
+  margin-right: 32px;
+}
+
+footer .content {
+  max-width: 95%;
+  margin: 8px auto;
+  margin-bottom: 0px;
+  padding: 16px 32px;
+  top: 0;
+  left: 0;
+}
+
+footer .logo_address {
+  display: flex;
+  align-items: center;
+}
+
+footer .address {
+  font-size: 14px;
+}
+
+footer .bubbles_downleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0
+}
+
+footer .bubbles_topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 0
+}
+
+.links_socialmedia {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px;
+  font-size: 0.9em;
+}
+
+.links_socialmedia ul{
+  list-style-type: none;
+  margin-block-start: 0em;
+  padding-inline-start: 0px;
+}
+
+.links_socialmedia li {
+  align-items: center;
+  flex-basis: auto;
+}
+
+.links_socialmedia li a {
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  color: #F1EEF2;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.links_socialmedia .contact {
+  display: flex;
+  align-items: center;
+}
+
+.links_socialmedia img {
+  min-width: 24px;
+  margin: 8px 0px;
+  margin-right: 12px;
+  align-self: center;
+}
+
+.copyright p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+  .menubar {
+    flex-direction: column;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  .readability {
+    max-width: 100%;
+  }
+
+  .links_socialmedia {
+     flex-direction: column;
+  }
+
+  .links_socialmedia div {
+   margin-bottom: 8px;
+  }
+}

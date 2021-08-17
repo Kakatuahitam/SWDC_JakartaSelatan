@@ -1,0 +1,93 @@
+/* SWDC_JakartaSelatan */
+/*
+  Tim 1 Jakarta Selatan
+  1. Yuda Kurnia Nurul Fikri
+  2. Kenzi Dewandaru
+  3. Zainul Muzakki
+*/
+
+/* 1. index.html styles */
+
+.main_statistic {
+  margin: 8px 16px;
+  width: inherit;
+  text-align: center;
+}
+
+.main_statistic ul{
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.main_statistic li {
+  margin: 0px 20px;
+  align-items: center;
+  flex-basis: auto;
+}
+
+.main_statistic_item {
+  margin: 4px 0px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  top: 50%;
+  width: 100%;
+
+  background-color: #EA7811;
+  color: #F1EEF2;
+}
+
+.readability {
+  background-color: #F1EEF2;
+}
+
+.report_grid {
+  display: grid;
+  grid-template-columns: 20% 50% 24px auto;
+  grid-gap: 4px;
+}
+
+.reported_preview {
+  border: 1px solid grey;
+  border-radius: 8px;
+  background-color: white;
+  height: 24em;
+  padding: 8px;
+
+  display: flex;
+  text-align: center;
+  font-size: 11px;
+
+  overflow: hidden;
+}
+
+.reported_preview figure{
+  margin: 4px;
+}
+
+.reported_preview figure img {
+  width: 128px;
+  height: 128px;
+}
+
+label[for="agreement"] {
+  font-size: 12px;
+}
+
+.warn {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+#homepage_grid_warn {
+  grid-column-start: 4;
+  grid-row: 1 / span 4;
+}
+
+@media screen and (max-width: 1000px) {
+  .main_statistic ul {
+    flex-direction: column;
+  }
+}

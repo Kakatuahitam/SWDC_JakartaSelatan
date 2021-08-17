@@ -1,0 +1,39 @@
+/* SWDC_JakartaSelatan */
+/*
+  Tim 1 Jakarta Selatan
+  1. Yuda Kurnia Nurul Fikri
+  2. Kenzi Dewandaru
+  3. Zainul Muzakki
+*/
+
+/* 2. profile.html Styles */
+.structure {
+  display: block;
+  max-width: 800px;
+  margin: 8px auto;
+  padding: 8px auto;
+  border-radius: 16px;
+}
+
+.structure_downloads {
+  display: flex;
+  justify-content: center;
+}
+
+.document {
+  display: flex;
+  margin: 0 24px;
+  cursor: pointer;
+}
+
+.document img {
+  width: 36px;
+}
+
+.document_metadata {
+  margin: 0 24px;
+}
+
+.document_date {
+  font-size: 10px;
+}

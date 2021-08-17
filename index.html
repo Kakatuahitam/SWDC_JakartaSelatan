@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PP DKI Jakarta | Halaman Utama</title>
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="shortcut icon" href="assets/images/ppdki.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!--
+    SWDC_JakartaSelatan
+
+    Tim 1 Jakarta Selatan
+    1. Yuda Kurnia Nurul Fikri
+    2. Kenzi Dewandaru
+    3. Zainul Muzakki
+     -->
+   <header>
+       <div class="logo">
+         <a href="index.html"><img src="assets/images/ppdki_80px.png" alt="Pramuka Peduli Kwarda DKI Jakarta"></a>
+       </div>
+       <hr>
+       <div class="menubar">
+         <div class="left_bar">
+           <nav>
+             <ul>
+               <li><a href="news_article.html">Berita</a></li>
+               <li><a href="news_article.html#article">Artikel</a></li>
+               <li><a href="index.html#report">Lapor</a></li>
+               <li><a href="donation.html">Donasi</a></li>
+             </ul>
+           </nav>
+         </div>
+
+         <div class="right_bar">
+           <nav>
+             <ul>
+               <li><a href="#">Cari</a></li>
+               <li><a href="faq.html">FAQ</a></li>
+               <li><a href="gallery.html">Galeri</a></li>
+               <li><a href="#footer">Kontak</a></li>
+               <li><a href="profile.html">Profil</a></li>
+               <li class="lang_separator"></li>
+               <li><a class="lang selected_lang" href="#lang_id">ID</a></li>
+               <li><a class="lang" href="#lang_en">EN</a></li>
+             </ul>
+           </nav>
+         </div>
+       </div>
+   </header>
+
+    <main>
+      <div class="content">
+        <div class="main_jumbotron image_gradient">
+          <img src="assets/images/index/top_banner.png" width="100%" alt="">
+          <div class="jumbotron_caption">
+            Siap Sedia <br>
+            Ikut Serta Membangun Masyarakat
+          </div>
+        </div>
+        <div class="main_statistic">
+          <ul>
+            <li>
+              <div class="main_statistic_item">
+                <strong>> 897.323.533.865 Jam</strong>
+              </div>
+              <p>Pramuka Peduli Berbakti</p>
+            </li>
+
+            <li>
+              <div class="main_statistic_item">
+                <strong>> 32.533.421</strong>
+              </div>
+              <p>Anggota Aktif</p>
+            </li>
+
+            <li>
+              <div class="main_statistic_item">
+                <strong>> 463.432 Jam</strong>
+              </div>
+              <p>Aksi Pramuka Peduli Terlaksana</p>
+            </li>
+
+            <li>
+              <div class="main_statistic_item">
+                <strong>> Rp.932.323.533.971,00</strong>
+              </div>
+              <p>Donasi Tunai Terselesaikan</p>
+            </li>
+          </ul>
+        </div>
+        <div class="main_carousel image_gradient">
+          <img src="assets/images/index/homepage_carousel.png" width="100%" alt="">
+          <div class="jumbotron_caption">
+            Pramuka Peduli Kwartir Cabang Jakarta Selatan Turut Bekerja Bakti Pasca Kebakaran di Setiabudi
+          </div>
+        </div>
+
+        <div class="public_report readability" id="report">
+          <hr>
+          <br>
+          <h2>Laporkan kejadian bencana di sekitar Kakak pada isian berikut</h2>
+          <p>atau lihat <a href="report_list.html"><strong>laporan terkini</strong></a></p>
+          <br>
+          <form class="report_grid" action="index.html" method="post">
+            <!-- 1 -->
+            <p>Nama Pelapor</p>
+            <input type="text" name="reporter_name" placeholder="Sanda Andiana">
+            <p></p>
+            <div class="warn" id="homepage_grid_warn">
+              <div class="warn_icon">
+                <img src="assets/images/warn_white.png" height="24px" alt="">
+              </div>
+              <p>
+                Pastikan data yang dimasukkan adalah benar. Data akan ditampilkan
+                 di halaman laporan agar kejadian segera ditindaklanjuti
+              </p>
+            </div>
+
+            <!-- 2 -->
+            <p>Nama Kejadian</p>
+            <input type="text" name="reported_event" placeholder="Banjir">
+            <p></p>
+
+            <!-- 3 -->
+            <p>Lokasi Kejadian</p>
+            <input type="text" name="reported_location"
+                   placeholder="Jalan NIS, Cilandak Timur, Pasar Minggu, Jakarta Selatan.">
+            <p></p>
+
+            <!-- 4 -->
+            <p>Deskripsi</p>
+            <textarea rows="4" cols="50" name="reported_description"
+                      placeholder="Banjir setinggi 1 meter sudah 5 jam tidak surut-surut"></textarea>
+            <img class="upload_button" src="assets/images/location.png"
+                 width="24px" height="24px" alt="Lokasi">
+
+            <!-- 5 -->
+            <p>Foto Kejadian</p>
+            <div class="reported_preview">
+              <figure>
+                <img src="assets/images/index/banjir_report.jpg">
+                <figcaption>Gambar 1: 20210819_073059.jpg</figcaption>
+              </figure>
+
+              <figure>
+                <img src="assets/images/index/banjir_report2.jpg">
+                <figcaption>Gambar 1: 20210819_073334.jpg</figcaption>
+              </figure>
+
+            </div>
+            <img class="upload_button" src="assets/images/upload.png" alt="Unggah Foto">
+
+            <!-- 6 -->
+            <p></p>
+            <p></p>
+            <div class="form_submit">
+              <input type="checkbox" name="agree" value="true">
+              <label for="agreement">
+                Saya menyatakan bahwa informasi yang dimasukkan adalah benar adanya sesuai kejadian
+              </label>
+              <br>
+              <input type="submit" name="submit" value="Unggah">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="content">
+        <div class="logo_address">
+          <img src="assets/images/ppdki_128px.png" width="128px" height="128px" alt="">
+          <div class="address">
+            <h3>Pramuka Peduli Kwarda DKI Jakarta</h3>
+            <p>
+              Jl. Diponegoro No. 26, Jakarta 10310<br>
+              Telp: (021) 3193 7464, 3192 2252, Fax: (021) 3901902<br>
+              Email: pramukadki@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="links_socialmedia">
+          <div class="about">
+            <p><strong>Tentang Pramuka Peduli</strong></p>
+            <hr>
+            <ul>
+              <li><a href="#">Struktur Organisasi</a></li>
+              <li><a href="#">Visi Misi</a></li>
+              <li><a href="#">Program Kerja</a></li>
+              <li><a href="#">Petunjuk Penyelenggaraan</a></li>
+            </ul>
+          </div>
+
+          <div class="website">
+            <p><strong>Website</strong></p>
+            <hr>
+            <ul>
+              <li><a href="#">Laporan Terkini</a></li>
+              <li><a href="#">Berita</a></li>
+              <li><a href="#">Artikel</a></li>
+              <li><a href="#">Pertanyaan yang Sering Diajukan</a></li>
+            </ul>
+          </div>
+
+          <div class="refer_site">
+            <p><strong>Tautan Terkait</strong></p>
+            <hr>
+            <ul>
+              <li><a href="#">Kwartir Nasional</a></li>
+              <li><a href="#">Abdimas Kwarnas</a></li>
+              <li><a href="#">Kwarda DKI Jakarta</a></li>
+              <li><a href="#">BNPB</a></li>
+              <li><a href="#">BPBD</a></li>
+            </ul>
+          </div>
+
+          <div class="socialmedia">
+            <p><strong>Kontak dan Sosial Media</strong></p>
+            <hr>
+            <ul>
+              <div class="contact">
+                <img src="assets/images/gmail_white.png" alt="">
+                <li><a href="#">pramukapeduli@pramukajakarta.id</a></li>
+              </div>
+
+              <div class="contact">
+                <img src="assets/images/wa_white.png" alt="">
+                <li><a href="#">wa.me/6221131922252</a></li>
+              </div>
+
+              <div class="contact">
+                <img src="assets/images/instagram_white.png" alt="">
+                <li><a href="#">@pp_dkijakarta</a></li>
+              </div>
+
+              <div class="contact">
+                <img src="assets/images/facebook_white.png" alt="">
+                <li><a href="#">Pramuka Peduli DKI Jakarta</a></li>
+              </div>
+
+              <div class="contact">
+                <img src="assets/images/youtube_white.png" alt="">
+                <li><a href="#">youtube.com/c/PramukaPeduliDKIJakarta</a></li>
+              </div>
+
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr>
+          <p>&copy Pramuka Peduli Kwarda DKI Jakarta 2021</p>
+        </div>
+      </div>
+      <img class="bubbles_downleft" src="assets/images/bubbles_downleft.png" alt="">
+      <img class="bubbles_topright" src="assets/images/bubbles_topright.png" alt="">
+    </footer>
+  </body>
+</html>
